@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modal genérico</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<!-- 
+	//Trabalhando com campos personalizados do Wordpress, puxando dados com PHP
+	// $habilitar_modal = get_field( 'habilitar_modal' , 'options' );
+	// $imagem = get_field('imagem_lightbox', 'options');
+	// $link = get_field('link', 'options');
+	// $abrir_nova_aba = get_field('abrir_nova_aba', 'options');
+
+	// $dataAtual = date('Ymd');
+	// $dataInicio = get_field('data_inicial' , 'options');
+	// $dataFim = get_field('data_final' , 'options');
+	
+	// if($dataAtual >= $dataInicio && $dataAtual <= $dataFim){
+	// 	if(!empty($imagem) && $habilitar_modal) { -->
+	<div class="modal-home active">
+		<div class="modal-home-layer"></div>
+		<div class="modal-home-content"><!-- <?php echo ($link ?  '' : 'custom-cursor-modal'); ?> -->
+			<div class="modal-home-close">
+				<span class="modal-span-close">fechar</span>
+				<!-- <?php include get_template_directory().'images/close.svg';?> -->
+			</div>
+			<a href="http://google.com" target="_blank"><!-- <?php echo ($link ?  $link : 'javascript:;'); ?>" target="<?php echo ($abrir_nova_aba  && $link ? '_blank' : '_self'); ?>-->
+				<!-- <img src="<?php echo $imagem; ?>">-->
+				<div style="background: #00ffcb; width: 900px; height: 500px;">
+					<span class="modal-span title">Olá!</span>
+					<span class="modal-span content">Esse é um exemplo genérico de modal</span>
+				</div>
+				<!-- <img src="" background="900px"width="900px" height="500px"> -->
+			</a>
+		</div>
+	</div>
+	<section class="container">
+		<h1>Exemplo de modal</h1>
+		<p>utilizando classe a tributos genéricos, para que possa ser utilizado em qualquer projeto</p>
+		<p>Uso jQuery para aplicar comportamentos</p>
+		<p>Todo o resto é feito com HTML e Css puro</p>
+		<p>Utilize alguma linguaguem back-end ou o próprio javascript para pegar conteúdos dinâmicos, ness exemplo comentado no index tem funções php para pegar campos personalizados do Wordpress.</p>
+	</section>
+
+	<script src="/assets/js/jquery.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
+
