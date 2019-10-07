@@ -1,4 +1,4 @@
-# Modalgenério para reutilização em futuras oportunidades
+# Modal genério para reutilização em futuras oportunidades
 
 
 As classe utilizadas são genéricas e de fácil entendimento.
